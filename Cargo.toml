@@ -1,0 +1,19 @@
+[package]
+name = "tokens_watcher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+serde = "1.0.133"
+serde_derive = "1.0.133"
+teloxide = { version = "0.5.3", features = ["macros", "auto-send", "ctrlc_handler"] }
+log = "0.4"
+pretty_env_logger = "0.4.0"
+tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
+anyhow = "1.0.52"
+web3 = "0.17.0"
+hex-literal = "0.3.4"
+futures = "0.3.16"
